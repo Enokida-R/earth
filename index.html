@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EPIC</title>
+</head>
+<body>
+
+    <header>
+        <h1>NASAの地球画像アーカイブ</h1>
+        <p>ここでは、選択した日付のNASAによる地球の画像を閲覧できます。</p>
+    </header>
+
+    <main>
+        <section id="date-selector">
+            <label for="selectDate">日付を選択:</label>
+            <input type="date" id="selectDate" name="selectDate" min="2015-07-04" max="">
+        </section>
+
+        <section id="image-display">
+            <div id="container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>このページはNASAの提供するを<a href="https://api.nasa.gov/">API</a>利用しています。</p>
+    </footer>
+
+    <!-- モーダルウィンドウ -->
+    <div id="photo-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+        <button id="save-button">画像を保存</button>
+    </div>
+
+    <div id="text"></div>
+
+
+
+
+    <!--<input type="date" id="selectDate" >
+    <div id="photo-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+         -- 保存ボタンを追加 --
+    </div>-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
