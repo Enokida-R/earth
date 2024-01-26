@@ -67,7 +67,7 @@ async function epic(earthDate) {
     const container = document.getElementById('container') || createImageContainer();
     container.innerHTML = '';
     document.getElementById('text').innerHTML = '';
-    const epicResponse = await fetch(`https://api.nasa.gov/EPIC/api/natural/date/${earthDate}?api_key=rIQvvB9rZFJWrLb3Sh21jh79N9M8MlVAVoKnonqF`);
+    const epicResponse = await fetch(`/epic/${earthDate}`);
     const res = await epicResponse.json();
     //const imageName = res[3].image;
 
@@ -105,7 +105,9 @@ async function epic(earthDate) {
     
 }catch (error){
     console.error('エラー:'+error);
-}
+} /*finally{
+    hideLoader();
+}*/
 }
 
 selectDate.addEventListener('change', function() {
