@@ -30,7 +30,7 @@ const loadingExp = document.createElement('div');
 loadingExp.id = 'loader';
 loadingExp.textContent = '画像を読み込んでいます...';
 loader.id = 'image-loader';
-loader.src = 'Loding.png';
+loader.src = 'images/Loding.png';
 loader.classList.add('loader');
 loadingContainer.appendChild(loadingExp);
 loadingContainer.appendChild(loader);
