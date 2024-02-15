@@ -67,7 +67,7 @@ async function epic(earthDate) {
     const container = document.getElementById('container') || createImageContainer();
     container.innerHTML = '';
     document.getElementById('text').innerHTML = '';
-    const epicResponse = await fetch(`/epic/${earthDate}`);
+    const epicResponse = await fetch(`/node-earth/${earthDate}`);
     const res = await epicResponse.json();
     //const imageName = res[3].image;
 

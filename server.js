@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/epic/:earthDate', async (req, res) => {
+app.get('/node-earth/:earthDate', async (req, res) => {
     try {
         const epicResponse = await fetch(`https://api.nasa.gov/EPIC/api/natural/date/${req.params.earthDate}?api_key=${process.env.NASA_API_KEY}`);
         const data = await epicResponse.json();
