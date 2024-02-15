@@ -7,5 +7,11 @@
     "init": "^0.1.2",
     "node-fetch": "^3.3.2",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node yourMainFile.js"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
