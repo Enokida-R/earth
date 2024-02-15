@@ -105,9 +105,9 @@ async function epic(earthDate) {
     
 }catch (error){
     console.error('エラー:'+error);
-} /*finally{
+}finally{
     hideLoader();
-}*/
+}
 }
 
 selectDate.addEventListener('change', function() {
