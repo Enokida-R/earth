@@ -9,18 +9,18 @@
     "routes": [
       {
         "src": "/static/(.*)",
-        "dest": "/static/$1"
+        "dest": "/public/static/$1"
       },
       {
-        "src": "/(.*).(js|css|png|jpg|gif|svg|ico)",
-        "dest": "/public/$1.$2"
+        "src": "/(.*\\.(css|js|html|png|jpg|jpeg|gif|svg|ico))",
+        "dest": "/public/$1"
       },
       {
         "src": "/api/(.*)",
         "dest": "/api/$1"
       },
       {
-        "src": "/(.*)",
+        "src": "/.*",
         "dest": "server.js"
       }
     ]
